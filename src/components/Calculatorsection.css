@@ -1,0 +1,280 @@
+.maincalc {
+    width: 100%;
+    margin: -25rem auto 0rem;
+    margin-top: 100px;
+    padding-left: 117.6px;
+    
+}
+
+.innercalc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    height: 400px;
+    position: relative;
+}
+
+.leftcalc {
+    background-color: #ee7e01;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0rem;
+}
+
+.leftfirstcalc {
+    width: 40%;
+    padding: 2rem 0rem 2rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    border-right: 1px solid white;
+}
+
+.linkdiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #c76b05;
+    padding: 0.6rem;
+}
+
+.headercalc {
+    font-size: 2rem;
+    color: white;
+}
+
+.textcalc {
+    color: white;
+    width: 80%;
+    font-size: 1rem;
+} 
+
+.terms {
+    font-size: 17px;
+    color: white;
+}
+
+.warning {
+    color: white;
+    font-size: 25px;
+}
+
+.rightcalc {
+    height: 100%;
+    padding: 3rem;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.salarytinz {
+    color: white;
+}
+
+.roundthing {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 15rem;
+}
+
+.loan {
+    color: white;
+}
+
+.loan {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 1.6rem;
+    z-index: 5;
+}
+
+.loandrag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #f7bf80;
+    border-radius: 50%;
+    padding-bottom: 25%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.loandrag::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: #ee7e01;
+    border-radius: 50%;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    /* background-color: #f7bf80; */
+    border-radius: 50%;
+    padding-bottom: 25%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border: 5px solid #ee7e01;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    left: 43%;
+    aspect-ratio: 1;
+    transform: translate3d(-25%, -35%, 0);
+    padding-bottom: 1%;
+    cursor: pointer;
+}
+
+.floatcalc {
+    height: 85%;
+    filter: drop-shadow(0px 50px 50px rgba(0, 0, 0, 0.15));
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+
+.innerfloatcalc {
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    background-color: white;
+    padding: 2rem 2rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+}
+
+.instant {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.instant:hover {
+    background-color: black;
+    color: white;
+}
+
+.eligibleloan {
+    color: rgb(67, 67, 67);
+}
+
+.none {
+    font-size: 30px;
+    color: #ee7e01;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tenor {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.payday {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1200px){
+     .innerfloatcalc {
+        right: 0;
+     }
+
+     .maincalc {
+        padding-left: 50px;
+     }
+}
+
+@media screen and (max-width: 1120px){
+    .innercalc {
+        flex-direction: column;
+    }
+
+    .innerfloatcalc {
+       position: absolute;
+       top: 100%;
+       left: 15%;
+    }
+
+    .floatcalc {
+         bottom: 10%;
+         width: 100%;
+
+    }
+
+    .leftcalc {
+        width: 100%;
+    }
+
+    .maincalc {
+        height: 800px;
+    }
+
+
+}
+
+@media screen and (max-width: 585px){
+    .leftcalc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .innercalc {
+        height: 550px;
+    }
+
+    .leftfirstcalc {
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    .rightcalc {
+        padding: 0px;
+    }
+
+    .innerfloatcalc {
+        top: 100%;
+        padding: 30px;
+    }
+
+    .maincalc {
+        height: 1000px;
+    }
+}

@@ -1,0 +1,142 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sectiondiv {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+  position: absolute;
+  top: -40px;
+}
+
+.firstsection {
+  position: relative;
+}
+
+.iconssection {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 90px;
+}
+
+.accessgreen > h1 {
+    color: #007168;
+}
+
+.iconz {
+  font-size: 40px;
+}
+
+.slidingCards {
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.exploremore {
+  color: #014086;
+  font-size: 23px;
+  margin-bottom: 70px;
+}
+
+.morebanking {
+   display: flex;
+   padding-left: 160px;
+   padding-right: 160px;
+   margin-top: 30px;
+}
+
+.multicolored {
+  height: 6px;
+    margin-top: -5px;
+    width: 100vw;
+    z-index: 3;
+    background: linear-gradient(to right, #114c8d 40%, #9bc002 40%, #9bc002 65%, #eb7824 65%, #eb7824 85%, #057a82 85%, #057a82 100%);
+}
+
+.tools {
+  font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+    color: rgb(92, 92, 92);
+}
+
+.yetmorecards {
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 40px;
+}
+
+.cardlinks {
+   display: flex;
+}
+
+@media screen and (max-width: 1200px){
+     .slidingCards {
+      gap: 30px;
+     }
+
+     .morebanking {
+      padding-left: 50px;
+      padding-right: 50px;
+      gap: 40px;
+     }
+}
+
+@media screen and (max-width: 1100px){
+      .iconssection {
+        gap: 30px;
+      }
+
+      .yetmorecards {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .slidingCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+@media screen and (max-width: 895px){
+    .morebanking {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 786px){
+    .sectiondiv {
+       flex-direction: column;
+       gap: 20px;
+    }
+
+    .firstsection {
+      height: 500px;
+    }
+
+    .cardlinks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .slidingCards, .morebanking {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .iconssection {
+      display: none;
+    }
+}

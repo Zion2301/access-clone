@@ -1,0 +1,112 @@
+.footerdiv {
+    background-color: #014086;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 80px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.aboutfooter {
+      color: white;
+      font-size: 18px;
+      font-weight: lighter;
+}
+
+.footerlinks {
+    color: rgb(217, 217, 217);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.eachtop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.topdiv {
+    display: flex;
+    gap: 80px;
+}
+
+.footsocials {
+    clip-path: polygon(0 0, 100% 0%, 98.2% 100%, 0% 100%);
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footsocials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    border-right: 100px solid #fff;
+    border-bottom: 100px solid transparent;
+    width: 0;
+    z-index: 1;
+    transform: rotate(60deg);
+}
+
+.phones {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+.call {
+    font-size: 30px;
+}
+
+.downloadapps {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apps {
+    color: grey;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.call {
+    color: white;
+}
+
+.footsocials {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1120px){
+    .footsocials {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 895px){
+       .footerdiv {
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+
+       .topdiv {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+       }
+}

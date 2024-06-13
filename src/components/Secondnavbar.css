@@ -1,0 +1,82 @@
+.home {
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+}
+
+.secondnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    background: #f1f1f1;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8em;
+    outline: 0 !important;
+    flex: 1.5;
+    border: none;
+    height: 63px;
+    width: 200px;
+}
+
+.rightnav {
+    display: flex;
+}
+
+.internetbank {
+    color: white;
+    background-color: #ee7e01;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.magnify {
+     font-size: 20px;
+}
+
+.internet {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1200px){
+    .home {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .home {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .searchtext, .internettext {
+        display: none;
+    }
+
+    .search {
+        background-color: white;
+        text-align: center;
+        width: auto;
+    }
+}

@@ -1,0 +1,30 @@
+.cardlink {
+    width: 176px;
+    height: 151px;
+    border: 4px solid hsla(212, 99%, 26%, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: all 0.2s;
+    margin: auto;
+    margin-right: 1rem;
+    transition: 0.5s;
+}
+
+.theicon {
+    color: #014086;
+    font-size: 28px;
+}
+
+.cardlinktext {
+    color: grey;
+    text-decoration: underline white;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 786px){
+    .cardlink {
+        width: 100%;
+    }
+}

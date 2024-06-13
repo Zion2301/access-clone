@@ -1,0 +1,29 @@
+.card {
+    background-color: #a4c519;
+    width: 25%;
+    padding: 20px;
+    border-left: 1px solid white;
+}
+
+.card:hover {
+    border-bottom: 5px solid white;
+} 
+
+
+
+.account {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.icons {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 786px){
+    .card {
+        width: 100%;
+    }
+
+}

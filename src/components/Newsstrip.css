@@ -1,0 +1,54 @@
+.latestnews {
+    background-color: #eeeeee;
+    height: 38px;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    /* width: 25%; */
+    min-width: fit-content;
+    padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 12px;
+    color: #555555;
+    text-transform: uppercase;
+    white-space: nowrap;
+    justify-content: flex-end;
+    padding-left: 200px;
+}
+
+.newsstrip {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 160px;
+}
+
+.orangeSlash {
+    width: 55px;
+    height: 38px;
+    clip-path: polygon(81% 0, 100% 0%, 49% 100%, 31% 100%);
+    background-color: #f98537;
+    margin-right: -0.96rem;
+    z-index: 3;
+}
+
+.white {
+    display: flex;  
+    width: 100%;
+    background-color: white;
+}
+
+.multicolored {
+    height: 6px;
+    margin-top: -5px;
+    width: 100%;
+    z-index: 3;
+    background: linear-gradient(to right, #114c8d 35%, #d32e12 35%, #d32e12 65%, #9bc002 65%, #9bc002 85%, #eb7824 85%, #eb7824 95%, #057a82 95%, #057a82 100%);
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 570px){
+     .latestnews {
+        padding-left: 30px;
+     }
+}

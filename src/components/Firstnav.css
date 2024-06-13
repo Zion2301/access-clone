@@ -1,0 +1,51 @@
+.firstnavbar {
+    background-color: #edebeb;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+}
+
+.firstmenu {
+    font-size: 35px;
+    display: none;
+}
+
+.leftLinks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.help {
+    font-size: 12px;
+    text-decoration: none;
+    color: #ee7e01;
+    font-weight: bolder; 
+}
+
+.rightlink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1010px){
+      .leftLinks {
+        display: none;
+      }
+
+      .firstmenu {
+        display: block;
+      }
+}

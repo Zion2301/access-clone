@@ -1,0 +1,36 @@
+.mainDiv {
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 70px;
+}
+
+.accessmorehead {
+    font-weight: bolder;
+}
+
+.lightershi {
+    font-weight: lighter;
+}
+
+.accesstext {
+    font-size: 14px;
+    text-align: center;
+    width: 96%;
+    color: rgb(74, 74, 74);
+    font-weight: bold;
+    max-width: 1100px;
+    padding-left: 300px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px){
+      .accesstext {
+        padding-left: 0px;
+      }
+}
+
+@media screen and (max-width: 500px){
+    .mainDiv {
+        padding-left: 10px;
+    }
+}
